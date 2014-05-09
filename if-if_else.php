@@ -80,17 +80,20 @@ else
     echo "$b is not equal to $c\n";
 }
 
-if ($b === $c) {
+if ($b === $c) 
+{
     // output the appropriate result
     echo "$b is identical to $c\n";
 }
 
-if ($b != $c) {
+if ($b != $c) 
+{
     // output the appropriate result
     echo "$b is not equal to $c\n";
 }
 
-if ($b !== $c) {
+if ($b !== $c) 
+{
     // output the appropriate result
     echo "$b is not identical to $c\n";
 }
