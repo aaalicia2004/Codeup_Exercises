@@ -24,24 +24,31 @@ if ($b <= $c) {
     echo "$b is less than or equal to $c\n";
 }
 
-if ($b == $c) {
+if ($b == $c) 
+{
     // output the appropriate result
-    echo "$b is equal to $c\n";
+    echo "$b integer is equal in value to $c string\n";
 }
 
-if ($b === $c) {
-    // output the appropriate result
-    echo "$b is identical to $c\n";
+
+if ($b === $c) 
+{    // output the appropriate result
+    echo "$b is identical and equal in value to $c\n";
+}
+else 
+{   echo "The $b integer is not identical to the $c string.\n";
 }
 
 // output the appropriate result
-if ($b != $c) {
+if ($b != $c) 
+{
     echo "$b is not equal to $c\n";
 }
 
 // output the appropriate result
-if ($b !== $c) {
-    echo "$b is not identical to $c\n";
+if ($b !== $c) 
+{
+    echo "$b integer is not identical to $c string\n";
 }
 
 ?>
