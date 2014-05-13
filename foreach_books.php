@@ -6,7 +6,7 @@ $books = array(
         'author' => 'J. R. R. Tolkien',
         'pages' => 310
     ),
-    'Game of Thrones' => array(
+    'A Game of Thrones' => array(
         'published' => 1996,
         'author' => 'George R. R. Martin',
         'pages' => 835
@@ -23,5 +23,7 @@ $books = array(
     )
 );
 foreach($books as $title => $book){
-	echo "{$title} was published in {$book['published']} by {$book ['author']} and is {$book ['pages']} pages long.\n";
+	if ($book['published'] > 1950) {
+		echo "{$title} was published in {$book['published']} by {$book ['author']} and is {$book ['pages']} pages long.\n";
+	}
 }
