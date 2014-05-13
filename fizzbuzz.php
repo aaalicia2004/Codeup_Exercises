@@ -10,9 +10,14 @@ $max_num = (int) fgets(STDIN);
 fwrite(STDOUT, "Enter a number to increase your starting number by ");
 $increase_min_number = (int) fgets(STDIN);
 
-for($a = $min_number; $a <= $max_num; $a += $increase_min_number)
-{
+//Step 3.
+if($increase_min_number== 0){
+	$increase_min_number = 1;
+}
+
+for($a = $min_number; $a <= $max_num; $a += $increase_min_number){
 	echo "{$a}\n";
+
 }
 
 
