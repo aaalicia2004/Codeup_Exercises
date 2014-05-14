@@ -1,7 +1,7 @@
 <?php
 
-$fruit = ["Star Fruit", "Grapefruit", "Kiwi", "Mango", "Coconut", "Apple"];
-$i = 0;
+//$fruit = ["Star Fruit", "Grapefruit", "Kiwi", "Mango", "Coconut", "Apple"];
+//$i = 0;
 
 //FIRST STEP: Create an array of fruit (3-5). Write a loop that prints the fruit.
 //Write as a for loop and as a foreach loop.
@@ -28,5 +28,27 @@ $i = 0;
 //	echo $key + 1 . ". ";
 //	echo $value . "\n";
 //}
+
+//SECOND STEP:
+
+//Modify the above fruit array so that you have the fruit name and color.
+//Print using a foreach loop. 
+
+$fruits =[
+	'apples' => 'red',
+	'oranges' => 'orange',
+	'bananas' => 'yellow',
+	'tomatoes' => 'green'
+];
+
+foreach ($fruits as $fruit => $color){
+		echo "{$fruit} are {$color}\n";
+}
+
+
+
+
+
+
 
 
