@@ -1,5 +1,9 @@
 <?php
 
+function divide_0_error($a,$b){
+		echo "ERROR: Please choose a number other than ZERO!";
+}
+
 function add($a, $b){
 	if(is_numeric($a) && is_numeric($b)){
 		echo $a + $b;
@@ -43,8 +47,8 @@ function multiply($a, $b){
 multiply(25,'Nope');
 
 function divide($a, $b){
-	if ($b == 0){
-		echo "ERROR: Please choose a number other than ZERO!";
+	if($b==0){
+		divide_0_error($a,$b);
 	}elseif(is_numeric($a) && is_numeric($b)){
 		echo $a / $b;
 	}else{
@@ -60,7 +64,7 @@ divide(100,0);
 
 function modulo($a, $b){
 	if ($b == 0){
-		echo "ERROR: Please choose a number other than ZERO!";
+		divide_0_error($a,$b);
 	}elseif(is_numeric($a) && is_numeric($b)){
 		echo $a % $b;
 	}else{
