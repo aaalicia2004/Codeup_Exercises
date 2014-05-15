@@ -31,23 +31,26 @@ function multiply($a, $b){
 multiply(25,4);
 
 function divide($a, $b){
-	if (is_numeric($a) && is_numeric($b)){
+	if ($b == 0){
+		echo "ERROR: Please choose a number higher than ZERO!";
+	}elseif(is_numeric($a) && is_numeric($b)){
 		echo $a / $b;
 	}else{
 		echo "Value entered is not numeric!";
 	}
 	echo PHP_EOL;
-
 }
-divide(100,4);
+divide(100,0);
 
 function modulo($a, $b){
-	if (is_numeric($a) && is_numeric($b)){
+	if ($b == 0){
+		echo "ERROR: Please choose a number higher than ZERO!";
+	}elseif(is_numeric($a) && is_numeric($b)){
 		echo $a % $b;
 	}else{
 		echo "Value entered is not numeric!";
 	}
 	echo PHP_EOL;
 } 
-modulo(100, 50); //Note: the remainder of 100 divided by 50 is 0.
+modulo(100,0); //Note: the remainder of 100 divided by 50 is 0.
 
