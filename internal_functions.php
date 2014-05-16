@@ -23,7 +23,8 @@ echo check_for_isset_empty($nothing) . PHP_EOL;
 echo check_for_isset_empty($something) . PHP_EOL;
 echo check_for_isset_empty($array) . PHP_EOL;
 
-
+$serial= serialize($array);
+echo "The array named \$array looks like this serialized: $serial" . PHP_EOL;
 
 
 
