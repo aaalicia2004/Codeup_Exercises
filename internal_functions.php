@@ -23,17 +23,15 @@ echo check_for_isset_empty($nothing) . PHP_EOL;
 echo check_for_isset_empty($something) . PHP_EOL;
 echo check_for_isset_empty($array) . PHP_EOL;
 
-$serial= serialize($array);
-echo "The array named \$array looks like this serialized: $serial" . PHP_EOL;
-
-
-
-
-
 
 // Serialize the array $array, and output the results
+$serial=serialize($array);
+echo "The array named \$array looks like this serialized: $serial" . PHP_EOL;
 
 // Unserialize the array $array, and output the results
+$back_to_array = unserialize($serial);
+echo "Changed the serialized string back into an array\n";
+var_dump($back_to_array) . PHP_EOL;
 
 
 // Create the program to meet the criteria set by each comment.
