@@ -1,80 +1,74 @@
 <?php
 
 function divide_0_error($a,$b){
-		echo "ERROR: Please choose a number other than ZERO!";
+		return "ERROR: Please choose a number other than ZERO!";
 }
 
 function add($a, $b){
 	if(is_numeric($a) && is_numeric($b)){
-		echo $a + $b;
+		return $a + $b;
 	}else{
 		if(!is_numeric($a)){
-			echo $a . " is not a number. DUH!";	
+			return $a . " is not a number. DUH!";	
 		} else{
-			echo $b . " is not a number. DUH!";
+			return $b . " is not a number. DUH!";
 		}
 	}
-	echo PHP_EOL;
 }
-add(50,"Alicia");
+echo add(50,"Alicia") . PHP_EOL;
 
 function subtract($a, $b){
 	if (is_numeric($a) && is_numeric($b)){
-		echo $a - $b;
+		return $a - $b;
 	}else{
 		if(!is_numeric($a)){
-			echo $a . " is not a number. DUH!";	
+			return $a . " is not a number. DUH!";	
 		}else{
-			echo $b . " is not a number. DUH!";
+			return $b . " is not a number. DUH!";
 		}
 	}
-	echo PHP_EOL;
 }
-subtract(100,"Alicia");
+echo subtract(100,"Alicia") . PHP_EOL;
 
 function multiply($a, $b){
 	if (is_numeric($a) && is_numeric($b)){
-		echo $a * $b;
+		return $a * $b;
 	}else{
 		if(!is_numeric($a)){
-			echo $a . " is not a number. DUH!";	
+			return $a . " is not a number. DUH!";	
 		}else{
-			echo $b . " is not a number. DUH!";
+			return $b . " is not a number. DUH!";
 		}
 	}
-	echo PHP_EOL;
 }
-multiply(25,'Nope');
+echo multiply(25,'Nope') . PHP_EOL;
 
 function divide($a, $b){
 	if($b==0){
-		divide_0_error($a,$b);
+		return divide_0_error($a,$b);
 	}elseif(is_numeric($a) && is_numeric($b)){
-		echo $a / $b;
+		return $a / $b;
 	}else{
 		if(!is_numeric($a)){
-			echo $a . " is not a number. DUH!";	
+			return $a . " is not a number. DUH!";	
 		}else{
-			echo $b . " is not a number. DUH!";
+			return $b . " is not a number. DUH!";
 		}
 	}
-	echo PHP_EOL;
 }
-divide(100,0);
+echo divide(100,0) . PHP_EOL;
 
 function modulo($a, $b){
 	if ($b == 0){
-		divide_0_error($a,$b);
+		return divide_0_error($a,$b);
 	}elseif(is_numeric($a) && is_numeric($b)){
-		echo $a % $b;
+		return $a % $b;
 	}else{
 		if(!is_numeric($a)){
-			echo $a . " is not a number. DUH!";	
+			return $a . " is not a number. DUH!";	
 		}else{
-			echo $b . " is not a number. DUH!";
+			return $b . " is not a number. DUH!";
 		}
 	}
-	echo PHP_EOL;
 } 
-modulo(100,0); //Note: the remainder of 100 divided by 50 is 0.
-
+echo modulo(100,0) . PHP_EOL;
