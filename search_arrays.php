@@ -5,23 +5,36 @@ $names = ['Tina', 'Dana', 'Mike', 'Amy', 'Adam'];
 
 $compare = ['Tina', 'Dean', 'Mel', 'Amy', 'Michael'];
 
-function True_or_False_array($needle, $haystack)
+function array_has_value($needle, $haystack)
 {
-	if (array_search($needle, $haystack) !== FALSE) 
+	if (array_search($needle, $haystack) === FALSE) 
 	{
-		return TRUE;
+		return FALSE;
 
 	}
 	else
 	{
-		return FALSE;
+		return TRUE;
+	}
+//simplified return array_search($needle, $haystack) !== false;
+}//var_dump(True_or_False_array('Bob', $names));
+//echo True_or_False_array('Bob', $names) . PHP_EOL;
+
+function array_common_count($array1,$array2)
+{
+	$count = 0;
+
+	foreach($array1 as $value)
+{
+		if (array_has_value($value, $array2)) 
+		{
+			$count++;
+		}
 	}
 
+	return $count;
 }
-echo True_or_False_array('Bob', $names) . PHP_EOL;
 
-
-
-
+var_dump(array_common_count ($names, $compare));
 
 
