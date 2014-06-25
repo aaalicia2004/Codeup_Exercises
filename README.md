@@ -2,6 +2,4 @@
 
 This is my personal repository from my Codeup class of non web-based exercises
 
-Files Include:
-Fizz Buzz
-Command line exercises
+Files Include:Fizz Buzz and Command line exercises
